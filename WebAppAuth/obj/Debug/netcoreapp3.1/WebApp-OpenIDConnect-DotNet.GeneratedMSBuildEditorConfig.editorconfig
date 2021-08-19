@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = WebApp-OpenIDConnect-DotNet
+build_property.ProjectDir = C:\Dev\Platzi\AzureADB2C\WebAppAuth\
