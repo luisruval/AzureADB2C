@@ -1,4 +1,5 @@
 ﻿using Microsoft.Identity.Client;
+using Microsoft.Identity.Web;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using TaskWebApp.Utils;
 
+
 namespace TaskWebApp.Controllers
 {
 	[Authorize]
@@ -17,6 +19,8 @@ namespace TaskWebApp.Controllers
     {
         private readonly string apiEndpoint = Globals.ServiceUrl + "/api/tasks/";
 
+       // AuthorizeForScopes(Scopes = new[] { "read", "write" })]
+       
         // GET: Makes a call to the API and retrieves the list of tasks
         public async Task<ActionResult> Index()
         {
